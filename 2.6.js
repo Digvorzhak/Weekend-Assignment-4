@@ -19,4 +19,4 @@ const centuryFromYear = (year) => {
   return century;
 };
 
-// console.log(centuryFromYear(1939));
+// console.log(centuryFromYear(1850));
