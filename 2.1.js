@@ -19,4 +19,14 @@ const sumOfLowest = (arr) => {
   return min + secondMin;
 };
 
-// console.log(sumOfLowest([10, 343445353, 3453445, 3453545353453]));
+console.log(sumOfLowest([10, 343445353, 3453445, 3453545353453]));
+
+// *********** REFACTOR ****************
+
+const sumOfLowestRefactor = (arr) => {
+  const min = arr.reduce((acc, num) => (num < acc ? (acc = num) : acc));
+  arr.splice(arr.indexOf(min), 1);
+  const secondMin = arr.reduce((acc, num) => (num < acc ? (acc = num) : acc));
+  return min + secondMin;
+};
+console.log(sumOfLowestRefactor([10, 343445353, 3453445, 3453545353453]));

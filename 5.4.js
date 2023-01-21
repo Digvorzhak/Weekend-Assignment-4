@@ -4,7 +4,6 @@ const toWeirdCase = (words) => {
   const strArr = words.split(" ");
   console.log(strArr);
   let arr = [];
-  let result = [];
   for (let i = 0; i < strArr.length; i++) {
     arr = strArr[i].split("");
     // console.log(arr);

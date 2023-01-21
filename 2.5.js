@@ -9,4 +9,4 @@ const summation = (num) => {
   return arr.reduce((acc, el) => el + acc);
 };
 
-// console.log(summation(8));
+console.log(summation(8));

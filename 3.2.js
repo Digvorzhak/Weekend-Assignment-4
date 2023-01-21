@@ -1,7 +1,6 @@
 "use strict";
 
 const busCalc = (arr) => {
-  let counter = 0;
   let array = [];
   for (let i = 0; i < arr.length; i++) {
     array[i] = arr[i][0] - arr[i][1];

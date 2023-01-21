@@ -11,6 +11,8 @@ const binaryCalc = (arr) => {
 
 console.log(binaryCalc([1, 1, 1, 1]));
 
+// *********** REFACTOR ******************
+
 const binaryCalc1 = (arr) => arr.reverse().reduce((acc, el, i) => acc + Math.pow(2, i) * el, 0);
 
 console.log(binaryCalc1([1, 1, 1, 1]));
